@@ -1,0 +1,19 @@
+; fio-seq-RW.job for fiotest
+
+[global]
+name=fio-seq-RW
+filename=fio-seq-RW
+rw=rw
+rwmixread=50
+rwmixwrite=50
+bs=256K
+direct=0
+numjobs=4
+time_based
+runtime=120
+
+[file1]
+size=5G
+ioengine=libaio
+iodepth=16
+
