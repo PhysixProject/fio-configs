@@ -1,6 +1,6 @@
 [global]
-name=fio-seq-reads
-filename=fio-seq-reads
+name=fio-seq-read
+filename=fio-seq-read
 rw=read
 bs=256K
 direct=1
@@ -12,3 +12,6 @@ runtime=120
 size=5G
 ioengine=libaio
 iodepth=16
+write_bw_log=seq-read
+write_lat_log=seq-read
+write_iops_log=seq-read

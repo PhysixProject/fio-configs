@@ -14,3 +14,7 @@ runtime=120
 size=5G
 ioengine=libaio
 iodepth=16
+write_bw_log=rand-read
+write_lat_log=rand-read
+write_iops_log=rand-read
+

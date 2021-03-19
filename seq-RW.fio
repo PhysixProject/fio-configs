@@ -8,7 +8,7 @@ rwmixread=50
 rwmixwrite=50
 bs=256K
 direct=0
-numjobs=4
+numjobs=1
 time_based
 runtime=120
 
@@ -16,4 +16,8 @@ runtime=120
 size=5G
 ioengine=libaio
 iodepth=16
+write_bw_log=seq-RW
+write_lat_log=seq-RW
+write_iops_log=seq-RW
+
 
